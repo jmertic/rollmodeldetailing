@@ -11,9 +11,7 @@
 # -----------------
 en: &DEFAULT_EN
   nav:
-    - title: "Services"
-      section: services
-    - title: "Portfolio"
+    - title: "What We Do"
       section: portfolio
     - title: "Contact"
       section: contact
@@ -30,8 +28,6 @@ en-AU:
 # -------
 es: &DEFAULT_ES
   nav:
-    - title: "Servicios"
-      section: servicios
     - title: "Portafolio"
       section: portafolio
     - title: "Contáctenos"
