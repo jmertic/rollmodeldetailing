@@ -1,6 +1,5 @@
 ---
 title: 1987 Buick Turbo Regal
-subtitle: Full detail
 images: 
   - image: assets/img/portfolio/1987-buick-regal.jpg
   - image: assets/img/portfolio/1987-buick-regal-1.jpg

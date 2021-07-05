@@ -1,6 +1,5 @@
 ---
 title: 2021 Chevrolet Corvette
-subtitle: Graphic Design
 image: assets/img/portfolio/2021-corvette.jpg
 alt: 2021 Chevrolet Corvette
 
