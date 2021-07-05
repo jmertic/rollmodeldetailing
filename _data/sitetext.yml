@@ -11,7 +11,7 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: Perfection is in the details
+    title: Perfection is in the detail
     button: What We Do
     buttonlink: "#portfolio"
 

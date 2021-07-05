@@ -1,0 +1,51 @@
+<!-- Portfolio Modals -->
+{% for project in site.portfolio %}
+  <div class="portfolio-modal modal fade" id="p{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">{{ project.title }}</h2>
+                <p class="item-intro text-muted">{{ project.subtitle }}</p>
+								{% if project.image %}
+                <img class="img-fluid d-block mx-auto" src="{{ project.image }}" alt="{{ project.alt }}">
+								{% elsif project.images %}
+								<div id="carouselPortfolio{{ forloop.index }}" class="carousel slide" data-ride="carousel">
+								  <div class="carousel-inner">
+		                {% for carouselImage in project.images %}
+                    <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                      <img src="{{ carouselImage.image }}" class="d-block w-100" alt="{{ carouselImage.alt }}">
+    			          </div>
+                    {% endfor %}
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-target="#carouselPortfolio{{ forloop.index }}" href="#carouselPortfolio{{ forloop.index }}" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-target="#carouselPortfolio{{ forloop.index }}" href="#carouselPortfolio{{ forloop.index }}" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+		            {% endif %}
+		            <p>{{ project.content }}</p>		
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  {{ site.data.sitetext[site.locale].portfolio.closebutton | default: "Close Project" }}</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+<!-- End Portfolio Modals --> 
