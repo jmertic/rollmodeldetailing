@@ -12,6 +12,8 @@
 en: &DEFAULT_EN
   nav:
     - title: "What We Do"
+      section: services
+    - title: "Our Work"
       section: portfolio
     - title: "Contact"
       section: contact
@@ -23,16 +25,5 @@ en-GB:
   <<: *DEFAULT_EN
 en-AU:
   <<: *DEFAULT_EN
-
-# Spanish
-# -------
-es: &DEFAULT_ES
-  nav:
-    - title: "Portafolio"
-      section: portafolio
-    - title: "Contáctenos"
-      section: contacto
-es-ES:
-  <<: *DEFAULT_ES
-es-CO:
-  <<: *DEFAULT_ES
+es: 
+  <<: *DEFAULT_EN

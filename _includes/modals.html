@@ -13,16 +13,16 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">{{ project.title }}</h2>
-                <p class="item-intro text-muted">{{ project.subtitle }}</p>
-								{% if project.image %}
-                <img class="img-fluid d-block mx-auto" src="{{ project.image }}" alt="{{ project.alt }}">
-								{% elsif project.images %}
+                {% capture imagepath %}/assets/img/portfolio/{{project.slug}}{% endcapture %}
+                {% assign image_files = site.static_files | where_exp: "file","file.path contains imagepath" %}
+                {% if image_files.size == 1 %}
+                <img class="img-fluid d-block mx-auto" src="{{ image_files.first.path }}">
+								{% else %}
 								<div id="carouselPortfolio{{ forloop.index }}" class="carousel slide" data-ride="carousel">
 								  <div class="carousel-inner">
-		                {% for carouselImage in project.images %}
+		                {% for carouselImage in image_files %}
                     <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                      <img src="{{ carouselImage.image }}" class="d-block w-100" alt="{{ carouselImage.alt }}">
+                      <img src="{{ carouselImage.path }}" class="d-block w-100">
     			          </div>
                     {% endfor %}
                   </div>

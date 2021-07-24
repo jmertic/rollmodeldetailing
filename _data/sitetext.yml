@@ -15,6 +15,30 @@ en: &DEFAULT_EN
     button: What We Do
     buttonlink: "#portfolio"
 
+  services:
+    title: "What We Do"
+    text: "What We Do"
+    section: services
+    list:
+      - title: "Full interior and exterior detailing"
+        desc: "Complete cleaning services including wheels and tires, carpet steaming and stain extraction, pet hair removal, engine bay cleaning, windows, and leather cleaning"
+        icon: "fas fa-hand-sparkles"
+      - title: "Paint Correction and Enhancements"
+        desc: "Paintless dent removal and Ceramic and Graphene coatings" 
+        icon: "fas fa-paint-brush"
+      - title: "Customization"
+        desc: "de- badging,  badge blackout"
+        icon: "fas fa-air-freshener"
+      - title: "Restoration"
+        desc: "Restoration services for trim, faded paint, and headlight/tailights."
+        icon: "fas fa-car"
+      - title: "Service you can trust"
+        desc: "Fully insured and registered with 25+ years experience"
+        icon: "far fa-handshake"
+      - title: "Pick up and drop off service"
+        desc: "Can meet you and provide a free estimate"
+        icon: "fas fa-shipping-fast"
+
   portfolio:
     title: "Professional Detailing Services for your automobile, boat or RV"
     section: portfolio
