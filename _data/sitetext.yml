@@ -13,11 +13,10 @@ en: &DEFAULT_EN
   header:
     title: Perfection is in the detail
     button: What We Do
-    buttonlink: "#portfolio"
+    buttonlink: "#services"
 
   services:
     title: "What We Do"
-    text: "What We Do"
     section: services
     list:
       - title: "Full interior and exterior detailing"
