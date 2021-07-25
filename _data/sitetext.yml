@@ -11,7 +11,7 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: Perfection is in the detail
+    title: "<img src='assets/img/roll-models-tagline.svg' />"
     button: What We Do
     buttonlink: "#services"
 
