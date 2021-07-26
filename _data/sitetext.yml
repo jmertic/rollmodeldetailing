@@ -11,7 +11,7 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: "<img src='assets/img/roll-models-tagline.svg' />"
+    title: "<img src='assets/img/roll-models-tagline.svg' style='max-width: 70%;' />"
     button: What We Do
     buttonlink: "#services"
 
